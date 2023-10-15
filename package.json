@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client",
+    "e2e"
+  ],
+  "scripts": {
+    "build:client": "yarn workspace jacob-personal-site-client build",
+    "dev": "yarn workspace jacob-personal-site-server dev",
+    "dev:debug": "yarn workspace jacob-personal-site-server dev:debug",
+    "heroku-postbuild": "yarn workspace jacob-personal-site-client build",
+    "start": "yarn workspace jacob-personal-site-server start",
+    "dev:cypress": "yarn workspace jacob-personal-site-server dev:e2e",
+    "e2e:open": "yarn workspace jacob-personal-site-e2e e2e:open",
+    "e2e:run": "yarn workspace jacob-personal-site-e2e e2e:run"
+  },
+  "engines": {
+    "node": "^16.18"
+  }
+}
